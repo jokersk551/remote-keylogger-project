@@ -22,27 +22,17 @@ A Python-based remote keylogger tool designed for educational and ethical use on
 - Python 3.6 or above
 - Libraries:
   - pynput
-  - schedule
-
+  
 📦 Install Dependencies
-pip install pynput schedule
+pip install pynput 
 
 ---------------------------------------------------
 
 🧠 Usage
 
-📧 Email Keylogger
-
-1. Open keylogger_email.py
-2. Configure:
-   EMAIL_ADDRESS = "your_email@gmail.com"
-   EMAIL_PASSWORD = "your_app_password"
-   TO_ADDRESS = "recipient@example.com"
-
-   ⚠️ Use an App Password if 2FA is enabled on Gmail.
 
 3. Run:
-   python keylogger_email.py
+   python receiver.py
 
 ---------------------------------------------------
 
@@ -52,7 +42,7 @@ On Attacker (Listener) Machine:
 python keylogger_server.py
 
 On Victim Machine:
-1. Open keylogger_client.py
+1. Open keylogger_remote_socket.py
 2. Set the IP:
    SERVER_IP = "attacker-ip-address"
    PORT = 4444
@@ -80,10 +70,10 @@ This tool is intended strictly for educational, ethical hacking, and penetration
 📁 Project Structure
 
 remote_keylogger_project/
-├── keylogger_email.py       # Sends keylogs via email
-├── keylogger_client.py      # Sends keylogs over socket
-├── keylogger_server.py      # Receives and displays keylogs
-└── README.txt               # Project documentation
+
+├── keylogger_remote_socket.py     # Sends keylogs over socket
+├── receiver.py                    # Receives and displays keylogs
+└── README.txt                     # Project documentation
 
 ---------------------------------------------------
 
@@ -98,4 +88,4 @@ GitHub: https://github.com/jokersk551
 📬 Contact
 
 Email: sahilkoliethical@gmail.com  
-Instagram: https://www.instagram.com/j.o.k.e.r_sk/
+Instagram: https://www.instagram.com/j.o.k.e.r_sk
